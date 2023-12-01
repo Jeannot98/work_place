@@ -11,7 +11,7 @@ const MenuSidebar = () => {
     const { activeHeader, setActiveHeader, menuOpen, setMenuOpen, presentationMenu, setPresentationMenu } = useContext(ProjectsContext)
 
     return (
-        <div className={`${menuOpen ? 'right-0' : '-right-[500px]'} md:hidden flex flex-col fixed h-full w-[400px] top-0 justify-between items-center bg-white p-3`}>
+        <div className={`${menuOpen ? 'right-0' : '-right-[500px]'} md:hidden flex flex-col fixed h-full w-[350px] top-0 justify-between items-center bg-white p-3`}>
             <div className='flex items-center w-full justify-between transition-all duration-500 scroll-smooth ease-in-out'>
                 <Link to='/'><img src={logo} onClick={() => setActiveHeader(0)} className='w-[50px] md:w-[180px]' /></Link>
 

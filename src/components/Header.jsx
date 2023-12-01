@@ -26,9 +26,9 @@ const Header = () => {
 
       <div onClick={()=>setDarkMode(!darkmode)} className='flex gap-1 items-center cursor-pointer'>
         <VscColorMode color='#030eee' size={30} />
-        {darkmode? <h5 className='text-white mr-7 text-[5px] md:text-2xl'>Light Mode</h5>:<h5 className='text-[#030eee] mr-20 text-[5px] md:text-2xl'>Dark Mode</h5>}
+        {darkmode? <h5 className='text-white mr-20 text-[5px] md:text-2xl'>Light Mode</h5>:<h5 className='text-[#030eee] mr-20 text-[5px] md:text-2xl'>Dark Mode</h5>}
       </div>
-      <MdOutlineMenuOpen size={35} onClick={() => setMenuOpen(!menuOpen)} className='text-pink-600 md:hidden' />
+      <MdOutlineMenuOpen size={15} onClick={() => setMenuOpen(!menuOpen)} className='text-pink-600 md:hidden h-16 w-16' />
 
       
 
