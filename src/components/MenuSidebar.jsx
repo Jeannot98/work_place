@@ -8,7 +8,7 @@ import { navList } from '../data/Data'
 import { Link } from 'react-router-dom'
 
 const MenuSidebar = () => {
-    const { activeHeader, setActiveHeader, menuOpen, setMenuOpen } = useContext(ProjectsContext)
+    const { activeHeader, setActiveHeader, menuOpen, setMenuOpen, presentationMenu, setPresentationMenu } = useContext(ProjectsContext)
 
     return (
         <div className={`${menuOpen ? 'right-0' : '-right-[500px]'} md:hidden flex flex-col fixed h-full w-[400px] top-0 justify-between items-center bg-white p-3`}>
@@ -26,7 +26,7 @@ const MenuSidebar = () => {
                         ))}
                     </ul>
                     <Link to={'/presentation'} className='text-white'>
-                    <button onClick={()=>setMenuOpen(!menuOpen)} className=' bg-pink-500 rounded-full flex items-center gap-1'>Video Presentation <BiSolidVideos size={20} /> </button>
+                    <button onClick={() => (setPresentationMenu(!presentationMenu), setActiveHeader(3))} className=' bg-pink-500 text-white rounded-full flex justify-center gap-2 items-center gap-1'>Video Presentation <BiSolidVideos size={20} /> </button>
                 </Link>
                 </div>
 
