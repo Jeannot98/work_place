@@ -13,8 +13,8 @@ const Home = () => {
                     <h1 className='text-[#030eee] w-full text-left'>Hi! I Am</h1>
                     <h1 className='text-pink-600 w-full text-left font-extrabold'>Jeannot MOGORE</h1>
                     <p className='text-white text-xl'>I am a skilled and passionate React Js Frontend developer with experience in creating beautiful, responsive and functional app</p>
-                    <Link to='/portfolio' >
-                        <button onClick={() => setActiveHeader(1)} className='mt-4 w-[50%] bg-gradient-to-br from-white to-pink-600 border-none text-center text-[#030eee] hover:scale-105
+                    <Link to='/portfolio' className='w-[50%]' >
+                        <button onClick={() => setActiveHeader(1)} className='mt-4 w-full bg-gradient-to-br from-white to-pink-600 border-none text-center text-[#030eee] hover:scale-105
                     transition-all duration-500 ease-in-out cursor-pointer'>Portfolio</button>
                     </Link>
                 </div>
