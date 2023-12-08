@@ -11,7 +11,7 @@ const Sidebar = () => {
 
     return (
         <div className={`${searchBar ? 'right-0' : '-right-full'} w-full h-full fixed top-0 sm:max-w-[500px] transition-all
-    duration-500 scroll-smooth ease-in-out ${darkmode? 'bg-black': 'bg-white'} overflow-scroll shadow-2xl shadow-pink-600 `}>
+    duration-500 scroll-smooth ease-in-out ${darkmode? 'bg-black': 'bg-white'} overflow-scroll shadow-lg ${darkmode ? 'shadow-[#033aee]': 'shadow-pink-600'} `}>
             <div className='flex w-[500px] items-center justify-between py-4 px-7 border-b-[1px] border-[#030eee] fixed top-0 bg-white'>
                 <h4 className='font-semibold text-[#030eee]  hidden md:block'>Search Result</h4>
                 <IoMdArrowForward size={20} onClick={() => setSearchBar(false)} className=' hidden md:block cursor-pointer text-pink-600' />

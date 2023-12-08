@@ -7,7 +7,7 @@ const Home = () => {
     const { setActiveHeader, darkmode } = useContext(ProjectsContext)
     
     return (
-        <div className={`${darkmode? 'bg-black': 'bg-white'} flex w-full h-[100vh] justify-center items-center md:p-[70px] p-[10px] mt-10`}>
+        <div className={`${darkmode? 'bg-[#1a1c24fd]': 'bg-white'} flex w-full h-[100vh] justify-center items-center md:p-[70px] p-[10px] mt-10`}>
             <div className='flex-col-reverse flex md:flex md:flex-row md:w-[80%] w-[100%]  justify-center md:rounded-br-[100px] md:rounded-tr-[100px] items-center p-5 bg-gradient-to-br from-pink-300 to-[#030eee]'>
                 <div className='flex flex-col gap-2 '>
                     <h1 className='text-[#030eee] w-full text-left'>Hi! I Am</h1>
@@ -20,7 +20,7 @@ const Home = () => {
                 </div>
 
                 <div className='rounded-full overflow-hidden bg-cover'>
-                    <img src={profile} />
+                    <img src={profile} className='h-28 md:h-full' />
                 </div>
             </div>
         </div>

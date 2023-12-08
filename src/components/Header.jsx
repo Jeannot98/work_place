@@ -14,7 +14,7 @@ const Header = () => {
 
 
   return (
-    <div className={`${darkmode? 'bg-black shadow-lg shadow-[#030eee]': 'bg-white shadow-lg shadow-pink-500'} flex fixed w-full top-0 justify-between items-center p-3`}>
+    <div className={`${darkmode? 'bg-black shadow-md shadow-[#030eee]': 'bg-white shadow-lg shadow-pink-500'} flex fixed w-full top-0 justify-between items-center p-3`}>
       <div className='flex items-center justify-between w-[600px] gap-11'>
         <Link to='/'><img src={logo} onClick={() => setActiveHeader(0)} className='w-[50px] md:w-[180px]' /></Link>
         <ul className='hidden md:flex gap-4 md:gap-14'>

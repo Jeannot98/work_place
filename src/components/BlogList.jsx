@@ -15,8 +15,8 @@ const BlogList = () => {
   return (
     <div>
       <div className='flex flex-col items-center'>
-        <div className='bg-white shadow-lg shadow-[#030eee] p-4 rounded-lg mt-[10px] mx-[25%] flex items-center gap-1'>
-          <AiOutlineSearch size={20} className='text-[20px] text-[#030eee]' />
+        <div className={`bg-white shadow-md ${darkmode ? 'shadow-[#033aee]': 'shadow-pink-600'} p-4 rounded-lg mt-[10px] mx-[25%] flex items-center gap-1`}>
+          <AiOutlineSearch size={20} className={`text-[20px] ${darkmode ? 'text-[#033aee]': 'text-pink-600'} text-[#030eee]'`} />
           <input onClick={() => setSearchBar(true)} onChange={(e) => setSearch(e.target.value)} type="text" placeholder='Search' className='text-[#030eee] outline-none w-[90%] ' />
         </div>
         <ul className='hidden gap-10 justify-center w-full mt-5'>
@@ -32,7 +32,7 @@ const BlogList = () => {
 
         <div className='grid grid-cols-1 md:grid-cols-3  mt-10 px-10 md:px-14 lg:px-32 '>
           {filteredPosts.map((item) => (
-            <div key={item.id} onClick={() => navigate('blog-detail/' + item.id)} className='m-4 cursor-pointer'>
+            <div key={item.id} onClick={() => navigate('blog-detail/' + item.id)} className={`m-4 p-2 cursor-pointer rounded-2xl shadow-md ${darkmode ? 'shadow-[#033aee]': 'shadow-pink-600'}`}>
               <img src={item.image} className='w-full rounded-2xl object-cover h-[200px]' />
               <h4 className='text-pink-600'>{item.tag}</h4>
               <h2 className={`${darkmode ? 'text-[#033aee]' : 'text-[#030eee] '} text-[23px] font-bold mt`}>{item.title}</h2>

@@ -16,7 +16,7 @@ function App() {
  const {menuOpen, setMenuOpen, darkmode} = useContext(ProjectsContext)
 
   return (
-    <div className={`${darkmode? 'bg-black': 'bg-white'} `}>
+    <div className={`${darkmode? 'bg-[#1a1c24fd]': 'bg-white'} `}>
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />

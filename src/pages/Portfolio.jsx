@@ -8,7 +8,7 @@ import { ProjectsContext } from '../context/ProjectsContext'
 const Portfolio = () => {
   const {darkmode} = useContext(ProjectsContext);
   return (
-    <div className={`${darkmode? 'bg-black': 'bg-white'} md:pt-16`}>
+    <div className={`${darkmode? 'bg-[#1a1c24fd]': 'bg-white'} md:pt-16`}>
         
 
         <Search/>

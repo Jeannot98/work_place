@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import {language} from '../data/Data'
 
 const PresentationSidebar = () => {
-    const { presentationMenu, setPresentationMenu, menuOpen, setMenuOpen } = useContext(ProjectsContext);
+    const { presentationMenu, setPresentationMenu, setMenuOpen } = useContext(ProjectsContext);
     
     return (
         <div >

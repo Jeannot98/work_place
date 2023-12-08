@@ -4,6 +4,7 @@ import data from '../assets/image/data.png'
 import ecommerce1 from '../assets/image/ecommerce1.png'
 import recipapp1 from '../assets/image/recipeapp1.png'
 import netflix1 from '../assets/image/netflix1.png'
+import recipefinder1 from '../assets/image/recipefinder1.png'
 // import course_app_ui1 from '../assets/image/courseapp1.png'
 
 // import courseapp1V from '../assets/videos/courseapp1.mp4'
@@ -77,12 +78,22 @@ export const list = [
   {
     id: 6,
     video: false,
+    title: ' Recipe Finder App',
+    description: ` Recipe Finder App With React JS And Tailwind CSS | Edamam API `,
+    image: recipefinder1,
+    tag: 'React',
+    code: 'https://github.com/Jeannot98/ecommerce1',
+    demo: 'https://ecommerce1.pages.dev/'
+  },
+  {
+    id: 7,
+    video: false,
     title: ' Netflix Clone',
     description: `Netflix Clone With React JS And Tailwind CSS | TMDB API `,
     image: netflix1,
     tag: 'React',
-    code: 'https://github.com/Jeannot98/netflix-clone1',
-    demo: 'https://netflix-clone1-xi.vercel.app/'
+    code: 'https://github.com/Jeannot98/recipe_finder',
+    demo: 'https://recipe-finder-smoky.vercel.app/'
   },
 ]
 
