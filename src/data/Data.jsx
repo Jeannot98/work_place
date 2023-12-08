@@ -82,8 +82,8 @@ export const list = [
     description: ` Recipe Finder App With React JS And Tailwind CSS | Edamam API `,
     image: recipefinder1,
     tag: 'React',
-    code: 'https://github.com/Jeannot98/ecommerce1',
-    demo: 'https://ecommerce1.pages.dev/'
+    code: 'https://github.com/Jeannot98/recipe_finder',
+    demo: 'https://recipe-finder-smoky.vercel.app/'
   },
   {
     id: 7,
@@ -92,8 +92,8 @@ export const list = [
     description: `Netflix Clone With React JS And Tailwind CSS | TMDB API `,
     image: netflix1,
     tag: 'React',
-    code: 'https://github.com/Jeannot98/recipe_finder',
-    demo: 'https://recipe-finder-smoky.vercel.app/'
+    code: 'https://github.com/Jeannot98/netflix-clone1',
+    demo: 'https://netflix-clone1-xi.vercel.app/'
   },
 ]
 
